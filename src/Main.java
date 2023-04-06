@@ -19,8 +19,6 @@ public class Main {
         auto.setColor("Blanco");
         String coloraux=auto2.getColor(); // cambiar el valor color en el auto 2
 
-        Propietario propietario4 = auto.getColor();    // Get :
-        Propietario propietario4 = auto.setColor();
 
 
        }
