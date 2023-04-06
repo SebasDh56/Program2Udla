@@ -20,6 +20,7 @@ public class Motor {
            fuerzaNm=cilindraje*numValvulas;
     }else if (combustible.equals("diesel")){
            fuerzaNm=cilindraje*numValvulas*1.5;
+           // ASIAFA
 
 
        }
