@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
@@ -18,6 +20,28 @@ public class Main {
         //Ralizar cambios
         auto.setColor("Blanco");
         String coloraux=auto2.getColor(); // cambiar el valor color en el auto 2
+
+        Propietario propietario4 =new Propietario("Luis",2147104713,"Latacunga" );
+        Motor motor4 =new Motor(34244243);
+        Auto auto4 =new Auto(motor4,propietario4);
+
+        Scanner sc=new Scanner(System.in);
+
+        System.out.println("Ingrese la marcA del AUTO ");
+        String marca= sc.next();
+        System.out.println("Ingrese año ");
+        int modelo = sc.nextInt();
+        System.out.println("Ingrese que combustible usa el AUTO ");
+        String combustible= sc.next();
+        System.out.println("ingrese el cilindreje ");
+        int cilindraje= sc.nextInt();
+        System.out.println("ingrese la placa ");
+        String placa= sc.next();
+        System.out.println("ingrese el Propiestario ");
+        String Propietario= sc.next();
+
+
+        System.out.println("***************************** ");
 
 
 

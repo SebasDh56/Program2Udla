@@ -1,6 +1,6 @@
 public class Auto {
     private String color;
-    private int puerta;                  // ATRIBUTO
+    private int puerta;                  // ATRIBUTOs
     private String placa;
     private int numLlantas;
     private Motor motor;
@@ -9,7 +9,13 @@ public class Auto {
 
     public Auto(){   //contructor sin  parametros //
     }
-    public Auto(String color, int puerta,String placa,int numLlantas,Motor motor,String modelo,Propietario propietario){
+
+    public Auto(Motor motor, Propietario propietario) {
+        this.motor = motor;
+        this.propietario = propietario;
+    }
+
+    public Auto(String color, int puerta, String placa, int numLlantas, Motor motor, String modelo, Propietario propietario){
         this.color=color;
         this.puerta=puerta;
         this.placa=placa;
@@ -87,5 +93,14 @@ public class Auto {
     public void setPropietario(Propietario propietario) {
         this.propietario = propietario;
     }
-}
+    public void imprimir_atributos (){
+        System.out.println("Placa del auto "+placa);
+        System.out.println("Modelo es "+ modelo);
+        System.out.println("De la persona"+propietario);
+        System.out.println("Con cedula de identidad"+propietario.getNumCedula());
+        System.out.println("La seri del motor es "+motor.getSerie());
+        System.out.println("Usa cobustible"+motor.getCombustible());
+        System.out.println("De cilindraje"+motor.getCilindraje());
+    }}
+
 
